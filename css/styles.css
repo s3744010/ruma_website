@@ -1,0 +1,155 @@
+body {
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.inner_header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.inner_header img {
+    width: 100%;
+}
+
+.navigation_bar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+    transition: .5s;
+}
+
+.navigation_container {
+    width: 80%;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation_container .logo_container {
+    height: 80px;
+    margin: 0 auto;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_container .logo_container img {
+    height: 90%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+    margin: 0;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: black;
+    font-family: 'Montserrat';
+    font-style: 16px;
+    
+    transition: all ease-in-out 250ms;
+}
+
+.navigation a li:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.burger {
+   cursor: pointer;
+   display: block;
+   margin: 0 auto;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color:  black;
+    margin: 5px;
+}
+
+/* @media screen and (max-width: 768px) {
+    .navigation {
+        position: absolute;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+    }
+} */
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.body .section1 {
+    margin: auto;
+    width: 70%;
+    height: 400px;
+    display: table;
+}
+
+.body .logo_container {
+    height: inherit;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.body .logo_container img {
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.body .section1 .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
