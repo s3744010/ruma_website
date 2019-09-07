@@ -32,27 +32,26 @@ body {
   
 nav {
     position: fixed;
-    padding-top: 25px;
-    height: 50px;
-    width: calc(100% - 60px);
+    padding: 25px;
+    height: 100px;
+    width: 100%;
     margin: 0 auto;
     z-index: 999;
     text-align: right;
-    padding-right: 2%;
+    transition: all ease-in-out 650ms;
 }
   
 .logo {
     width: 15%;
-    height: inherit;
+    height: 100%;
     float: left;
     color: #fff;
     text-align: left;
-    padding-left: 2%;
 }
 
 .logo img {
-      height: 100%;
-      width: auto;
+    height: 100%;
+    width: auto;
 }
   
 .menu-area li {
@@ -98,7 +97,7 @@ header {
       height: 100%;
       display: flex;
       margin: 0;
-      padding: 0;
+      padding-top: 4em;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -117,7 +116,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
-    grid-gap: 10px;
+    grid-gap: 4em;
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -175,4 +174,118 @@ header {
     grid-row-start: 5;
     grid-row-end: 9;
 }
+
+.membership {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7fa;
+}
+
+.membership .inner {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.membership .inner .content {
+    padding-left: 7em;
+    padding-right: 20em;
+}
+
+.sponsors {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#ffd2d6 , #FAF4D4);;
+    padding: 2em;
+}
+
+.sponsors .inner {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background:white;
+}
+
+.content {
+    padding-left: 6em;
+}
+
+.content h2{
+    text-align: left;
+    font-size: 1.7em;
+}
+
+
+.upcomingEvent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CAFCF5;
+    padding: 5em;
+}
+
+.upcomingEvent .inner {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcomingEvent .heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.upcomingEvent .heading h2 {
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.upcomingEvent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upcomingEvent .inner .content {
+    padding-left: 7em;
+}
+
 

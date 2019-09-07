@@ -3,25 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-    <!-- <script type="text/javascript">
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if($(this).scrollTop() > 0) {
-                    $(".navigation_bar").css({"background-color" : "rgba(255, 255, 255, 1)"})
-                }
-                else {
-                    $(".navigation_bar").css({"background-color" : "rgba(255, 255, 255, 0)"})
-                }
-            })
-        })
-    </script> -->
-
 
     <title>RUMA RMIT</title>
 
@@ -37,8 +26,10 @@
             <ul class="menu-area">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Sponsorhip</a></li>
+                <li><a href="#">The Team</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -85,12 +76,123 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="scripts/global.js"></script>
+    <section class="membership">
+        <div class="inner">
+            <div class="content">
+                <p>We love our members! And we want to give back to you!
+                    Here's your chance to get a FREE exclusive RUMA t-shirt on us!
+                    All you have to do is attend five events and you're all set. It's that simple!
+                    So what are you waiting for?</p>
+            </div>
+            <div class="image">
+                <img src="media/Business_Card_Mockup_2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sponsors">
+        <div class="inner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="content">
+                <h2>WE ARE PROUD TO HAVE THEM ON BOARD</h2>
+                <p>
+                    Here's to the start of a great semester.
+                    We appreciate them who share the same light as us
+                    to bring everyone connected with the club and the welfare of our member.
+                </p>
+            </div>
+        </div>
 
+        </div>
+        <script src="scripts/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        </script>
+    </section>
+    <section class="upcomingEvent">
+        <div class="inner">
+            <div class="heading">
+                <h2>Upcoming Event</h2>
+            </div>
+            <div class="image">
+                <img src="media/AGM 2019 square.png" alt="">
+            </div>
+            <div class="content">
+                <p> The time has come for us to step down from our positions and for ~you~ to step up to bring RUMA to
+                    greater heights🎈
+                </p>
+                <p> This AGM is for you if<br>
+                    1. You want to make some new friends👭👬<br>
+                    2. You want to step out of your comfort zone🛌<br>
+                    3. You want to learn soft skills + work together in a tightly knit community❤️
+                </p>
+                <p> You do not need to be a current RUMA member to run for a position!
+                    More information about eligibility for positions can be found in the application form below.
+                </p>
+                <p> RUMA AGM 2019 application will be closing at 11:59PM on the 7th of September!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pastEvents">
+
+    </section>
+</body>
+<footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $("nav").css({
+                        "background-color": "rgba(255, 255, 255, 1)",
+                        "padding": "5px 25px 5px 25px",
+                        "height": "60px"
+                    })
+                    $("nav a").css({ "color": "black" })
+                }
+                else {
+                    $("nav").css({
+                        "background-color": "rgba(255, 255, 255, 0)",
+                        "padding": "25px",
+                        "height": "100px"
+                    })
+                    $("nav a").css({ "color": "white" })
+                }
+            })
+        })
+    </script>
+    <!-- <script type="text/javascript" src="scripts/global.js"></script>
     <script>
         document.addEventListener("onload", headerResize());
         window.addEventListener("resize", headerResize);
-    </script>
-</body>
+    </script> -->
+</footer>
 
 </html>

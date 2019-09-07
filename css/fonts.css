@@ -1,34 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap');
-@font-face {
-    src: url(../fonts/Bebas_Neue.ttf);
-    font-family: Bebas Neue;
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Work+Sans&display=swap');
+
+:root {
+    --dark-color: #003447;
+    --bright-yellow: #FAF4D4;
+    --bright-pink: #FFD2D6;
+    --bright-blue: #CAFCF5;
+    --bright-green: #EAF8C4;
 }
 
 h1 {
-    font-size: 6em;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 5em;
+    letter-spacing: .1em;
+    font-family: 'Maven Pro', sans-serif;
     text-align: center;
     color: white;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     text-align: center;
     font-size: 1.5em;
     padding-bottom: .5em;
+    color: var(--dark-color);
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     text-align: center;
     font-size: 2em;
     padding-bottom: .5em;
+    color: var(--dark-color);
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.25em;
     padding-bottom: 1em;
+    color: var(--dark-color);
 }
 
 a {
