@@ -104,66 +104,13 @@ header {
       text-align: center;
 }
 
-.button {
-    display: inline-flex;
-    height: 80px;
-    width: 250px;
-    border: 2px solid #BFC0C0;
-    margin: 20px 20px 20px 20px;
-    color: #BFC0C0;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 4em;
-    letter-spacing: 1.5px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-#button-3 {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-  
-#button-3 a {
-    position: relative;
-    font-size: .3em;
-    transition: all .45s ease-Out;
-}
-  
-#circle {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 50%;
-    background: rgb(192, 191, 191);
-    position: absolute;
-    transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
-}
-  
-#button-3:hover #circle {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-}
-  
-#button-3:hover a {
-    color: #2D3142;
-}
-
 .about_us {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5em 0em 5em 0em;
-    background: linear-gradient(-90deg,hsla(6, 65%, 60%, 0.5) 30%, hsla(58, 90%, 68%, 0.5));
+    background: linear-gradient(-90deg,#ffd2d6 , #FAF4D4);
 }
 
 .about_us .inner {
