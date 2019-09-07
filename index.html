@@ -7,8 +7,8 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    
-    <script type="text/javascript">
+
+    <!-- <script type="text/javascript">
         $(document).ready(function() {
             $(window).scroll(function() {
                 if($(this).scrollTop() > 0) {
@@ -19,82 +19,72 @@
                 }
             })
         })
-    </script>
+    </script> -->
 
-    
-    <title>My Document</title>
+
+    <title>RUMA RMIT</title>
 
 </head>
 
 <body>
-    <div class="header">
-        <div class="navigation_bar">
-            <div class="navigation_container">
-                <div class="logo_container">
-                    <img src="../media/ruma_logo.png" alt="RUMA">
-                </div>
+    <div class="custom-padding">
+        <nav>
+            <div class="logo">
+                <img src="media/ruma_logo.png" alt="">
+            </div>
 
-                <ul class="navigation">
-                    <a href="#home">
-                        <li>Home</li>
-                    </a>
-                    <a>
-                        <li>About</li>
-                    </a>
-                    <a>
-                        <li>Membership</li>
-                    </a>
-                    <a>
-                        <li>Sponsor</li>
-                    </a>
-                    <a>
-                        <li>The Team</li>
-                    </a>
-                    <a>
-                        <li>Contact Us</li>
-                    </a>
-                </ul>
+            <ul class="menu-area">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="content">
+                <h1>RMIT UNIVERSITY<br>MALAYSIAN ASSOCIATION</h1>
+                <div class="button" id="button-3">
+                    <div id="circle"></div>
+                    <a href="#">Join the Family</a>
+                </div>
             </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-        <div class="inner_header">
-            <img src="../media/ruma_cover.jpg" alt="Merdeka Festival">
-        </div>
+        </header>
     </div>
 
-    <div class="body">
-        <div class="section1">
-            <div class="logo_container">
-                <img src="../media/ruma_logo.png" alt="RUMA">
-            </div>
+    <section class="about_us">
+        <div class="inner">
             <div class="content">
-                <h1>A Little About Us</h1>
+                <h2>Our Motto</h2>
+                <h3>Home Away From Home</h3>
                 <p>
-                    RMIT University Malaysian Association (RUMA), is a student association based in RMIT University that
-                    gives support and comfort towards the Malaysian students in Melbourne. We aim to meet, befriend and
-                    take care of our members via events held throughout the year in order to help students to bond with
-                    one another.
+                    We aim to meet, befriend and take care of our members via events held throughout the year in order
+                    to help students to bond with one another.
                 </p>
                 <p>
                     RUMA hopes to create a sense of familiarity in a foreign surrounding for all Malaysian students down
                     under. Student welfare and enjoyment is our number one priority so know that we are always here for
                     each and everyone of you, acting as your home away from home.
                 </p>
-                <p style="font-weight: bold; font-style: italic">
-                    FUN FACT: 'RUMAH' actually means home in our mother tongue!
-                </p>
+            </div>
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="media/left.jpg" class="gallery__img" alt="Image 1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="media/middleTop.jpg" class="gallery__img" alt="Image 2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="media/bottom.jpg" class="gallery__img" alt="Image 3">
+                </figure>
             </div>
         </div>
-    </div>
-    <script type="text/javascript" src="../scripts/global.js"></script>
+    </section>
+    <script type="text/javascript" src="scripts/global.js"></script>
 
     <script>
-            document.addEventListener("onload", headerResize()); 
-            window.addEventListener("resize", headerResize);
+        document.addEventListener("onload", headerResize());
+        window.addEventListener("resize", headerResize);
     </script>
 </body>
 
