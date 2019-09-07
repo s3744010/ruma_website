@@ -18,7 +18,7 @@ body {
 .custom-padding{
     overflow: hidden;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../media/ruma_cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../media/homepage/cover.jpg);
 
     /* Set a specific height */
     min-height: 500px; 
@@ -109,7 +109,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 5em 0em 5em 0em;
-    background: linear-gradient(-90deg,#ffd2d6 , #FAF4D4);
+    background: #FAF4D4;
 }
 
 .about_us .inner {
@@ -124,7 +124,6 @@ header {
 
 .about_us .content {
     text-align: center;
-    
 }
 
 .gallery {
@@ -180,7 +179,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f7f7fa;
+    background: #CAFCF5;
 }
 
 .membership .inner {
@@ -208,7 +207,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg,#ffd2d6 , #FAF4D4);;
+    background: #ffd2d6;
     padding: 2em;
 }
 
@@ -222,14 +221,14 @@ header {
     align-items: center;
 }
 
-.swiper-container {
+.sponsors .swiper-container {
     width: 100%;
     height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.swiper-slide {
+.sponsors .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -237,22 +236,26 @@ header {
     background:white;
 }
 
-.content {
+.sponsors .swiper-slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.sponsors .content {
     padding-left: 6em;
 }
 
-.content h2{
+.sponsors .content h2{
     text-align: left;
     font-size: 1.7em;
 }
-
 
 .upcomingEvent {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #CAFCF5;
+    background: #EAF8C4;
     padding: 5em;
 }
 
