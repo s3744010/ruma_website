@@ -238,8 +238,8 @@ nav li a.hover {
     grid-area: "slider";
     background-position: center;
     background-size: cover;
-    width: 50vh;
-    height: 50vh;
+    width: 30vh;
+    height: 30vh;
     background:white;
 }
 
