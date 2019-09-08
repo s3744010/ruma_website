@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+    }
+    .menu-toggle div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    header {
+        background-color: white;
+        padding: 5px;
+    }
+    nav  {
+        display: none;
+        
+    }
+    nav.active  {
+        display: block;
+        width: 100vw;
+    }
+
+    .menu-toggle.active:before {
+        background: white;
+    }
+
+    nav.active ul {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_us .inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-gap: 10px;
+    }
+    .membership .inner .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .sponsors .inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .sponsors .content {
+        padding: 0;
+    }
+
+    .sponsors .inner .content h2, p{
+        text-align: center;
+    }
+}

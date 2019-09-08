@@ -1,106 +1,112 @@
+:root {
+    --dark-color: #003447;
+    --bright-yellow: #FAF4D4;
+    --bright-pink: #FFD2D6;
+    --bright-blue: #CAFCF5;
+    --bright-green: #EAF8C4;
+}
+
 * {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
 }
-body {
-    height: 100vh;
+
+header {
+    position: fixed;
+    padding: 20px 20px;
+    width: 100vw;
+    background-color: none;
+    z-index: 999;
 }
-.menu-area li a {
+
+header img {
+    margin: 5px;
+    color: black;
+    height: 50px;
+    text-align: center;
+    float: left;
+    font-weight: 700;
     text-decoration: none;
 }
-  
-.menu-area li {
-    list-style-type: none;
-}
-  
-.custom-padding{
-    overflow: hidden;
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../media/homepage/cover.jpg);
 
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-  
 nav {
-    position: fixed;
-    padding: 25px;
-    height: 100px;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 999;
-    text-align: right;
-    transition: all ease-in-out 650ms;
-}
-  
-.logo {
-    width: 15%;
-    height: 100%;
-    float: left;
-    color: #fff;
-    text-align: left;
+    float: right;
 }
 
-.logo img {
-    height: 100%;
-    width: auto;
+.clearfix {
+    clear: both;
 }
-  
-.menu-area li {
-    display: inline-block;
+
+nav ul {
+    display: flex;
 }
-  
-.menu-area a {
-    color: #fff;
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a  {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(219, 219, 219);
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
-    display: block;
     padding: 10px 25px;
     font-size: 14px;
     line-height: 30px;
-    position: relative;
-    z-index: 1;
-}
-.menu-area a:hover {
-    background: tomato;
-    color: #fff;
-}
-  
-.menu-area a:hover:after {
-    transform: translateY(-50%) rotate(-35deg);
-}
-  
-nav:before {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 0;
-}
-  
-nav:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    right: 0;
 }
 
-header {
-      height: 100%;
-      display: flex;
-      margin: 0;
-      padding-top: 4em;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(255, 255, 255);
+    height: 1px;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+nav li a.active
+nav li a.hover {
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+.intro {
+    overflow: hidden;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../media/homepage/cover.jpg);
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about_us {
@@ -229,10 +235,11 @@ header {
 }
 
 .sponsors .swiper-slide {
+    grid-area: "slider";
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 50vh;
+    height: 50vh;
     background:white;
 }
 
@@ -242,6 +249,7 @@ header {
 }
 
 .sponsors .content {
+    grid-area: "content";
     padding-left: 6em;
 }
 
@@ -290,5 +298,3 @@ header {
 .upcomingEvent .inner .content {
     padding-left: 7em;
 }
-
-

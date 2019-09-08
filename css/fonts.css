@@ -46,3 +46,18 @@ a {
     font-size: 15px;
     color: white;
 }
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 10pt;
+    }
+    h2 {
+        font-size: 15pt;
+    }
+    h3 {
+        font-size: 12pt;
+    }
+    p {
+        font-size: 10pt;
+    }
+}

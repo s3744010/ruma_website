@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
-
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
     <title>RUMA RMIT</title>
-
 </head>
 
 <body>
-    <div class="custom-padding">
+    <header>
+        <img src="media/ruma_logo.png" alt="">
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
-            <div class="logo">
-                <img src="media/ruma_logo.png" alt="">
-            </div>
-
-            <ul class="menu-area">
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="page/events.html">Events</a></li>
                 <li><a href="#">Membership</a></li>
                 <li><a href="#">Sponsorhip</a></li>
                 <li><a href="#">The Team</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <header>
-            <div class="content">
-                <h1>RMIT UNIVERSITY<br>MALAYSIAN ASSOCIATION</h1>
-                <div class="button" id="button-3">
-                    <div id="circle"></div>
-                    <a href="#">Join the Family</a>
-                </div>
-            </div>
-        </header>
-    </div>
+        <div class="clearfix"></div>
+    </header>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+    <section class="intro">
+        <div class="content">
+            <h1>RMIT UNIVERSITY<br>MALAYSIAN ASSOCIATION</h1>
+            <div class="button" id="button-3">
+                <div id="circle"></div>
+                <a href="#">Join the Family</a>
+            </div>
+        </div>
+    </section>
     <section class="about_us">
         <div class="inner">
             <div class="content">
@@ -113,8 +125,6 @@
                 </p>
             </div>
         </div>
-
-        </div>
         <script src="scripts/swiper.min.js"></script>
         <script>
             var swiper = new Swiper('.swiper-container', {
@@ -159,39 +169,8 @@
             </div>
         </div>
     </section>
-
-    <section class="pastEvents">
-
-    </section>
 </body>
-<footer>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 0) {
-                    $("nav").css({
-                        "background-color": "rgba(255, 255, 255, 1)",
-                        "padding": "5px 25px 5px 25px",
-                        "height": "60px"
-                    })
-                    $("nav a").css({ "color": "black" })
-                }
-                else {
-                    $("nav").css({
-                        "background-color": "rgba(255, 255, 255, 0)",
-                        "padding": "25px",
-                        "height": "100px"
-                    })
-                    $("nav a").css({ "color": "white" })
-                }
-            })
-        })
-    </script>
-    <!-- <script type="text/javascript" src="scripts/global.js"></script>
-    <script>
-        document.addEventListener("onload", headerResize());
-        window.addEventListener("resize", headerResize);
-    </script> -->
-</footer>
+
+
 
 </html>
