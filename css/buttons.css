@@ -64,6 +64,7 @@
     position: relative;
     left: 0;
     color: #003447;
+    text-decoration-line: none;
     transition: all .35s ease-Out;
   }
   

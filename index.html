@@ -10,6 +10,7 @@
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <script src="scripts/global.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <title>RUMA RMIT</title>
 </head>
@@ -58,21 +59,21 @@
     </section>
     <section class="about_us">
         <div class="inner">
-            <div class="content">
+            <div class="content paragraph">
                 <h2>Our Motto</h2>
                 <h3>Home Away From Home</h3>
                 <p>
                     We aim to meet, befriend and take care of our members via events held throughout the year in order
                     to help students to bond with one another.
-                </p>
-                <p>
+                <br>
+                <br>
                     RUMA hopes to create a sense of familiarity in a foreign surrounding for all Malaysian students down
                     under. Student welfare and enjoyment is our number one priority so know that we are always here for
                     each and everyone of you, acting as your home away from home.
                 </p>
                 <div class="button" id="button-7">
                     <div id="dub-arrow"><img src="media/buttons/iconmonstr-arrow-48-240.png" alt="" /></div>
-                    <a href="#">Read More</a>
+                    <a href="#">Find out more</a>
                 </div>
             </div>
             <div class="gallery">
@@ -153,24 +154,41 @@
             <div class="image">
                 <img src="media/homepage/AGM_square.png" alt="">
             </div>
-            <div class="content">
-                <p> The time has come for us to step down from our positions and for ~you~ to step up to bring RUMA to
+            <div class="content paragraph">
+                <p>
+                    The time has come for us to step down from our positions and for ~you~ to step up to bring RUMA to
                     greater heights🎈
-                </p>
-                <p> This AGM is for you if<br>
+                    <br>
+                    <br>
+                    This AGM is for you if<br>
                     1. You want to make some new friends👭👬<br>
                     2. You want to step out of your comfort zone🛌<br>
                     3. You want to learn soft skills + work together in a tightly knit community❤️
-                </p>
-                <p> You do not need to be a current RUMA member to run for a position!
+                    <br>
+                    <br>
+                    You do not need to be a current RUMA member to run for a position!
                     More information about eligibility for positions can be found in the application form below.
+                    <br>
+                    <br>
+                    RUMA AGM 2019 application will be closing at 11:59PM on the 7th of September!
                 </p>
-                <p> RUMA AGM 2019 application will be closing at 11:59PM on the 7th of September!</p>
             </div>
         </div>
     </section>
 </body>
+<footer>
+    <script>
+        document.addEventListener("onload", headerResize());
+        window.addEventListener("resize", headerResize);
 
+        // document.addEventListener("onload", fontResize());
+        // window.addEventListener("resize", fontResize);
+        
+        document.addEventListener("onload", showText(0, 299));
+        document.addEventListener("onload", showText(1, 195));
+        
+    </script>
+</footer>
 
 
 </html>
